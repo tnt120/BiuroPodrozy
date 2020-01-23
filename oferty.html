@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biuro podróży</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" href="zdjecia/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/9620fd7ad5.js" crossorigin="anonymous"></script>
+    
+    
+    
+    
+    
+</head>
+<body>
+    <header>
+       
+        <span class="logo">
+            <p>Travelling</p>
+<!--                <a href="index.html"><img src="IMG/logo.png" alt="logo"/></a>-->
+        </span>
+        <input type="checkbox" id="nav-btn" class="nav-btn"/>
+        <nav>
+            <ul>
+                <li><a href="index.html" onclick='unChecked()'>Home</a></li>
+                <li><a href="promocje.html" onclick='unChecked()'>Promocje</a></li>
+                <li><a href="oferty.html" onclick='unChecked()'>Oferty</a></li>
+                <li><a href="galeria.html" onclick='unChecked()'>Galeria</a></li>
+                <li><a href="kontakt.html" onclick='unChecked()'>Kontakt</a></li>
+            </ul>
+
+        </nav>
+        <label for="nav-btn" class="nav-btn-label">
+            <span>
+                
+            </span>
+        </label>
+    </header>
+        
+    <main>    
+        <div id="oferta">
+            <h1>Cała oferta</h1>
+            <p>Zapraszamy do przejrzenia naszej całej oferty, jesteśmy pewni, że uda się Państwu zaleźć coś dla siebie</p>
+        </div>
+        
+        <div id="slider_oferty">
+            <img src="zdjecia/cyprprom.jpg" alt="Promocja" id="ofertysl">
+            <p id="slider_miejsce">Cypr</p>
+            <p><span id="slider_mn">2500 zł</span> <span id="slider_wk">2199 zł</span></p>
+            <p><i class="fas fa-backward" id="prev" onclick="prev()"></i><i class="fas fa-forward" id="next" onclick="next()"></i></p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Copyright 2020 &copy; Artur Pajor klasa 3f ZSE</p>
+    </footer>
+    
+    
+    <script src="slider.js"></script>
+</body>
+</html>

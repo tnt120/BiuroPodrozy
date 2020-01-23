@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biuro podróży</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" href="zdjecia/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    
+    
+</head>
+<body>
+    <header>
+       
+        <span class="logo">
+            <p>Travelling</p>
+<!--                <a href="index.html"><img src="IMG/logo.png" alt="logo"/></a>-->
+        </span>
+        <input type="checkbox" id="nav-btn" class="nav-btn"/>
+        <nav>
+            <ul>
+                <li><a href="index.html" onclick='unChecked()'>Home</a></li>
+                <li><a href="promocje.html" onclick='unChecked()'>Promocje</a></li>
+                <li><a href="oferty.html" onclick='unChecked()'>Oferty</a></li>
+                <li><a href="galeria.html" onclick='unChecked()'>Galeria</a></li>
+                <li><a href="kontakt.html" onclick='unChecked()'>Kontakt</a></li>
+            </ul>
+
+        </nav>
+        <label for="nav-btn" class="nav-btn-label">
+            <span>
+                
+            </span>
+        </label>
+    </header>
+        
+    <main>
+        <div class="onas">
+            <h1>O Nas</h1>
+            <p>
+                Witamy na stronie najlepszego biura podróży "Travelling" w Krakowie. Nasze biuro istnieje już na rynku od ponad
+                6 lat i zdążyło już podbić branżę podróżniczą w Polsce.<br>
+                Zajmujemy się wycieczkamy na Bliski Wschód - naszym konikiem są wycieczki do Egiptu.<br>
+                Proponujemy zarówno aktywny wypoczynek, jak i również taki dla bardziej lewniwych osób :)
+            </p>
+        </div>
+        
+        <div class="baner">
+            <img src="zdjecia/cypr1.jpg" alt="oferta" id="banner">
+        </div>
+        
+        <div class="wakacje">
+            <h2>Aktualna godzina: <span id="czas"></span></h2>
+            <h2>Do wakacji pozostało: <span id="odliczanie"></span></h2>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Copyright 2020 &copy; Artur Pajor klasa 3f ZSE</p>
+    </footer>
+    
+    <script src="baner.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>

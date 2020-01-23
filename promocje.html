@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biuro podróży</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" href="zdjecia/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    
+    
+</head>
+<body>
+    <header>
+       
+        <span class="logo">
+            <p>Travelling</p>
+<!--                <a href="index.html"><img src="IMG/logo.png" alt="logo"/></a>-->
+        </span>
+        <input type="checkbox" id="nav-btn" class="nav-btn"/>
+        <nav>
+            <ul>
+                <li><a href="index.html" onclick='unChecked()'>Home</a></li>
+                <li><a href="promocje.html" onclick='unChecked()'>Promocje</a></li>
+                <li><a href="oferty.html" onclick='unChecked()'>Oferty</a></li>
+                <li><a href="galeria.html" onclick='unChecked()'>Galeria</a></li>
+                <li><a href="kontakt.html" onclick='unChecked()'>Kontakt</a></li>
+            </ul>
+
+        </nav>
+        <label for="nav-btn" class="nav-btn-label">
+            <span>
+                
+            </span>
+        </label>
+    </header>
+        
+    <main>
+        <div id="promka">
+            <h1>POLECAMY:</h1>
+            <img src="zdjecia/promka.jpg" alt="promocja" id="promkajpg">
+            <p id="miejsce">Egipt</p>
+            <p><span class="mniejsza" id="mn">2599 zł</span> <span class="wieksza" id="wk">1599 zł</span></p>
+        </div>
+        <div id="inne">
+            <h1>Pozostałe promocje:</h1>
+            <div class="inneprom">
+                <img src="zdjecia/cyprprom.jpg" alt="Cypr" class="zdjprom" id="promka1">
+                <p id="miejsce1">Cypr</p>
+                <p><span class="mniejsza" id="mn1">2500 zł</span> <span class="wieksza" id="wk1">2199 zł</span></p>
+            </div>
+            
+            <div class="inneprom">
+                <img src="zdjecia/dubajprom.jpg" alt="Dubaj" class="zdjprom" id="promka2">
+                <p id="miejsce2">Dubaj</p>
+                <p><span class="mniejsza" id="mn2">3399 zł</span> <span class="wieksza" id="w2">3200 zł</span></p>
+            </div>
+            
+            <div class="inneprom">
+                <img src="zdjecia/RasAlKhaimahprom.jpg" alt="RasAlKhaima" class="zdjprom" id="promka3">
+                <p id="miejsce3">Ras Al Khaimah</p>
+                <p><span class="mniejsza" id="mn3">6299 zł</span> <span class="wieksza" id="wk3">5999 zł</span></p>
+            </div>
+            
+            <div class="inneprom">
+                <img src="zdjecia/turcjaprom.jpg" alt="Turcja" class="zdjprom" id="promka4">
+                <p id="miejsce4">Turcja</p>
+                <p><span class="mniejsza" id="m4">1600 zł</span> <span class="wieksza" id="wk4">1400 zł</span></p>
+            </div>
+        </div>        
+        
+    </main>
+    
+    <footer>
+        <p>Copyright 2020 &copy; Artur Pajor klasa 3f ZSE</p>
+    </footer>
+    
+    <script src="promocja.js"></script>
+</body>
+</html>

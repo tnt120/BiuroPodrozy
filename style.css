@@ -1,0 +1,465 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+header{
+    width: 100%;
+}
+
+main{
+    background-color: white;
+    height: 85%;
+    width: 100%;
+    padding-top: 8%;
+}
+
+.onas{
+    height: 20%;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px #34495e;
+    color: #34495e;
+    padding: 1%;
+}
+
+.onas h1{
+    color: black;
+    text-shadow: 1px 1px 2px #00b9f1;
+}
+
+.baner{
+    width: 80%;
+    margin-top: 15%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#banner{
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px #34495e;
+    color: #34495e;
+}
+
+.wakacje{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px #34495e;
+    color: #34495e;
+    margin-bottom: 3%;
+    padding: 1%;
+}
+
+.wakacje h2{
+    color: black;
+    text-shadow: 2px 2px 3px #00b9f1;
+    text-align: center;
+}
+
+#czas,#odliczanie{
+    font-weight: bold;
+    color: red;
+}
+
+footer{
+    background: black;
+    height: 2%;
+    width: 100%;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+#formularz{
+    
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 20px black;
+    margin-top: 10vh;
+}
+
+#promka{
+    text-align: center;
+    font-size: 120%;
+    text-shadow:  2px 2px 3px #00b9f1;
+}
+
+#promka img{
+    width: 25%;
+    border: 1px solid black;
+    margin-top: 2vh;
+}
+
+#promka p{
+    text-shadow: 0px 0px 0px white;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.mniejsza{
+    color: #00b9f1;
+    text-shadow: 0px 0px 0px white;
+    text-decoration: line-through;
+    font-size: 80%;
+}
+
+.wieksza{
+    color: black;
+    font-weight: bold;
+    font-size: 130%;
+    padding-top: 10vh;
+    text-shadow: 0px 0px 0px white;
+}
+
+#inne{
+    text-align: center;
+    padding-top: 3vh;
+    height: auto;
+    width: 80%;
+    margin: auto;
+}
+
+.inneprom{
+    width: 23%;
+    height: 25vh;
+    float: left;
+    margin-top: 2vh;
+    margin-left: 2%;
+}
+
+.zdjprom{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#galeria{
+    text-align: center;
+    font-size: 140%;
+    text-shadow:  2px 2px 3px #00b9f1;
+}
+
+#galeria_zdjecia{
+    width: 80%;
+    margin: auto;
+}
+
+.zdjgaleria{
+    width: 22.5%;
+    float: left;
+    margin-left: 2%;
+    margin-top: 2%;
+    border: 1px solid black;
+}
+
+#oferta{
+    text-align: center;
+    font-size: 140%;
+    text-shadow:  2px 2px 3px #00b9f1;
+}
+
+#oferta p{
+    text-shadow:  0px 0px 0px white;
+    font-size: 90%;
+}
+
+#slider_oferty{
+    height: 60vh;
+    width: 50%;
+    margin: auto;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+#ofertysl{
+    width: 100%;
+}
+
+#prev{
+    margin-right: 5%;
+    font-size: 200%;
+    cursor: pointer;
+    margin-top: 1vh;
+}
+
+#next{
+    margin-left: 5%; 
+    font-size: 200%;
+    cursor: pointer;
+    margin-top: 1vh;
+}
+
+#slider_miejsce{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 200%;
+}
+
+#slider_mn{
+    color: #00b9f1;
+    text-shadow: 0px 0px 0px white;
+    text-decoration: line-through;
+    font-size: 120%;
+}
+
+#slider_wk{
+    color: black;
+    font-weight: bold;
+    font-size: 160%;
+    padding-top: 10vh;
+    text-shadow: 0px 0px 0px white;
+}
+
+#ofertysl{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+/*FORM*/
+/*FORM*/
+/*FORM*/
+/*FORM*/
+/*FORM*/
+
+.containerK{
+	position: relative;
+	width: 100%;
+	height: 70vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.containerK:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-size: cover;
+	filter: blur(5px);
+	z-index: -1;
+}
+
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("zdjecia/dubaj1.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+.right{
+	padding: 25px 40px;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #00b9f1;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+.btn:hover{
+    background-color: #00b9e1;
+}
+
+@media screen and (min-width: 1025px){
+    .onas{
+        
+    }
+    
+    .onas p{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .baner{
+        margin-top: 5%;
+    }
+    
+    .wakacje{
+        margin-top: 3%;
+    }
+    
+    .wakacje h2{
+        font-size: 250%;
+    }
+    
+    .onas h1{
+        margin-left: 10px;
+        font-size: 250%;
+    }
+    
+    #banner{
+        width: 65%;
+        height: 100%
+    }
+    
+    #formularz{
+        height: 50vh;
+        width: 20%;
+    }
+    
+    #formularz h1{
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 3px black;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .onas{ 
+        margin-top: 18%;
+        height: 30%;
+    }
+    
+    .onas p{
+        font-size: 75%;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    
+    .baner{
+        margin-top: 9%;
+    }
+    
+    .wakacje{
+        margin-top: 9%;
+    }
+    
+    .wakacje h2{
+        font-size: 140%;
+    }
+    
+    .onas h1{
+        font-size: 160%;
+        margin-left: 8px;
+        padding-top: 10px;
+    }
+    
+    #banner{
+        width: 100%;
+    }
+    
+    #formularz{
+        height: 40vh;
+        width: 60%;
+        margin-top: 25vh;
+    }
+    
+    #formularz h1{
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px 3px black;
+        font-size: 160%;
+        margin-top: 10px;
+    }
+    
+    .contact-box{
+		grid-template-columns: 1fr;
+	}
+    
+    .left{
+		height: 200px;
+	}
+    
+    .containerK{
+	    height: 100vh;
+    }
+    
+    #promka{
+        margin-top: 10vh;
+    }
+    
+    #promka img{
+        width: 60%;
+    }
+    
+    .inneprom{
+        width: 48%;
+        height: 22vh;
+        float: left;
+        margin-top: 5vh;
+        margin-left: 2%;
+    }
+    
+    #galeria{
+        margin-top: 10vh;
+    }
+    
+    .zdjgaleria{
+        width: 46%;
+    }
+    
+    #oferta{
+        font-size: 120%;
+        margin-top: 10vh;
+    }
+
+    #oferta p{
+        font-size: 80%;
+        margin-top: 1vh;
+    }
+    
+    #slider_oferty{
+       width: 90%; 
+    }
+    
+    #slider_miejsce{
+        font-size: 170%;
+    }
+    #slider_mn{
+        font-size: 80%;
+    }
+
+    #slider_wk{
+        font-size: 140%;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biuro podróży</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" href="zdjecia/favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    
+    
+    
+</head>
+<body>
+    <header>
+       
+        <span class="logo">
+            <p>Travelling</p>
+<!--                <a href="index.html"><img src="IMG/logo.png" alt="logo"/></a>-->
+        </span>
+        <input type="checkbox" id="nav-btn" class="nav-btn"/>
+        <nav>
+            <ul>
+                <li><a href="index.html" onclick='unChecked()'>Home</a></li>
+                <li><a href="promocje.html" onclick='unChecked()'>Promocje</a></li>
+                <li><a href="oferty.html" onclick='unChecked()'>Oferty</a></li>
+                <li><a href="galeria.html" onclick='unChecked()'>Galeria</a></li>
+                <li><a href="kontakt.html" onclick='unChecked()'>Kontakt</a></li>
+            </ul>
+
+        </nav>
+        <label for="nav-btn" class="nav-btn-label">
+            <span>
+                
+            </span>
+        </label>
+    </header>
+        
+    <main>
+        <div class="containerK">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>KONTAKT</h2>
+                    <form>
+                    <input type="text" class="field" id="imie" placeholder="IMIĘ" onblur="sprawdz1()" required>
+                    <input type="email" class="field" id="mail" placeholder="E-MAIL" onblur="sprawdz2()" required>
+                    <input type="text" class="field" id="telefon" placeholder="TELEFON" onblur="sprawdz3()" required>
+                    <input type="date" class="field" required>
+                    <input type="number" class="field" placeholder="DŁUGOŚĆ WYJAZDU" required>
+                    <textarea placeholder="UWAGI" class="field"></textarea>
+                    <button class="btn" type="submit">WYŚLIJ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Copyright 2020 &copy; Artur Pajor klasa 3f ZSE</p>
+    </footer>
+    
+    <script src="walidacja.js"></script>
+</body>
+</html>
